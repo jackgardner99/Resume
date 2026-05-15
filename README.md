@@ -1,4 +1,3 @@
-# John Gardner — Resume
 
 Personal resume website for John Gardner, Fullstack Software Engineer.
 
