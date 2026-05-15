@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Gardner | Fullstack Software Engineer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 14px;
+      color: #222;
+      background: #fff;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 40px 0;
+    }
+
+    /* ── Header ── */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 3px solid #2c4a7c;
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+
+    .header-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 13px;
+    }
+
+    .header-contact a { color: #222; text-decoration: none; }
+
+    .header-right {
+      text-align: right;
+    }
+
+    .header-right h1 {
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #1a1a2e;
+      text-transform: uppercase;
+    }
+
+    .header-right .title {
+      font-size: 13px;
+      letter-spacing: 4px;
+      color: #444;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .header-right .github {
+      font-size: 12px;
+      margin-top: 6px;
+      color: #222;
+    }
+
+    .header-right .github a { color: #222; text-decoration: none; }
+
+    /* ── Section headings ── */
+    h2 {
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #2c4a7c;
+      border-bottom: 1px solid #2c4a7c;
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+
+    section { margin-bottom: 20px; }
+
+    /* ── About ── */
+    .about p { line-height: 1.6; }
+
+    /* ── Two-column layout ── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 30px;
+    }
+
+    /* ── Skills ── */
+    .skills ul {
+      list-style: disc;
+      padding-left: 18px;
+      columns: 2;
+      column-gap: 12px;
+      line-height: 2;
+    }
+
+    /* ── Projects ── */
+    .project { margin-bottom: 14px; }
+    .project h3 { font-size: 13px; font-weight: 700; line-height: 1.4; }
+    .project p { font-size: 12.5px; line-height: 1.5; margin: 4px 0; }
+    .project ul { padding-left: 18px; font-size: 12.5px; line-height: 1.6; }
+    .project a { color: #2c4a7c; word-break: break-all; }
+
+    /* ── Education ── */
+    .edu-entry { margin-bottom: 10px; }
+    .edu-entry h3 { font-size: 13px; font-weight: 700; }
+    .edu-entry p { font-size: 12.5px; line-height: 1.5; }
+
+    /* ── Right column (Technical + Professional) ── */
+    .right-col section { margin-bottom: 20px; }
+
+    .job { margin-bottom: 14px; }
+    .job h3 { font-size: 13px; font-weight: 700; }
+    .job .meta { font-size: 12px; color: #555; margin-bottom: 4px; }
+    .job .nss-desc { font-style: italic; font-size: 12px; color: #444; margin-bottom: 6px; line-height: 1.5; }
+    .job ul { padding-left: 18px; font-size: 12.5px; line-height: 1.6; }
+
+    /* ── Footer bar ── */
+    footer {
+      background: #2c4a7c;
+      height: 10px;
+      margin: 0 -40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-contact">
+      <span>&#128222; 615-712-1601</span>
+      <a href="mailto:jtgardner99@gmail.com">&#9993; jtgardner99@gmail.com</a>
+    </div>
+    <div class="header-right">
+      <h1>John Gardner</h1>
+      <div class="title">Fullstack Software Engineer</div>
+      <div class="github">GitHub: <a href="https://github.com/jackgardner99">https://github.com/jackgardner99</a></div>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I am currently a software engineering apprentice at Nashville Software School completing an intensive full-stack development program. My time in the program has strengthened my curiosity for problem-solving and given me the opportunity to collaborate with other developers while building real-world projects. Before transitioning into tech, I spent several years working in Nashville's music and hospitality industries, where I developed strong communication, adaptability, and teamwork skills that now shape how I approach software development.</p>
+  </section>
+
+  <div class="two-col">
+    <!-- Left column -->
+    <div class="left-col">
+
+      <section>
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>Python</li>
+          <li>React</li>
+          <li>JavaScript</li>
+          <li>Django</li>
+          <li>SQL</li>
+          <li>HTML/CSS</li>
+          <li>Git/GitHub</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <div class="project">
+          <h3>Front-End Capstone |<br>Gig Gazette</h3>
+          <p>Gig Gazette connects music lovers with the side of Nashville most apps ignore — the local venues, grassroots open mics, and undiscovered talent that give this city its soul.</p>
+          <ul>
+            <li>App has full CRUD capability (React, API fetch calls, React-Routing, and DRF)</li>
+            <li>Styling was achieved through CSS</li>
+            <li><a href="https://github.com/jackgardner99/Gig-Gazette">github.com/jackgardner99/Gig-Gazette</a></li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>Full-Stack Capstone |<br>Workout Logger</h3>
+          <p>Workout Logger is a full-stack web application that allows users to create and manage personal workout logs, track exercises, sets, reps, and intensity, and explore a community feed of other users' sessions.</p>
+          <ul>
+            <li>App has full CRUD capability (React, API fetch calls, React-Routing, and DRF)</li>
+            <li>Styling was achieved through CSS</li>
+            <li><a href="https://github.com/jackgardner99/Workout-Logger-Client">github.com/jackgardner99/Workout-Logger-Client</a></li>
+            <li><a href="https://github.com/jackgardner99/Workout-Logger-API">github.com/jackgardner99/Workout-Logger-API</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+
+        <div class="edu-entry">
+          <h3>Nashville Software School</h3>
+          <p>Certificate in Software Engineering</p>
+          <p>Graduation Date: May 2026</p>
+        </div>
+
+        <div class="edu-entry">
+          <h3>Belmont University</h3>
+          <p>Commercial Music Vocal Principle</p>
+          <p>Music Business Emphasis</p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Right column -->
+    <div class="right-col">
+
+      <section>
+        <h2>Technical Experience</h2>
+
+        <div class="job">
+          <h3>Software Developer</h3>
+          <div class="meta">Nashville Software School &ndash; 2025</div>
+          <p class="nss-desc">NSS is a six-month intensive, full-time software development bootcamp focusing on HTML, CSS, Javascript, React and server-side fundamentals with Python and Django.</p>
+          <ul>
+            <li>Single-page application development with React and with a focus on a modern ES6+ Javascript feature and modular code</li>
+            <li>Project management with issue tickets and GitHub Projects</li>
+            <li>Database planning by building entity relationship diagrams (ERD) to define relationships with an emphasis on maintaining a flat data structure</li>
+            <li>Utilized vanilla JavaScript (ES6), and React.js to create single page dynamic web applications using full CRUD functionality</li>
+            <li>Styled applications using CSS, Bootstrap, reactstrap, and Material UI</li>
+            <li>Completed 6 group project sprints while fully remote, comfortable with Slack, Zoom, GitHub Project, and wireframes for group communication and collaboration</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+          <h3>Studio Musician</h3>
+          <div class="meta">Nashville, TN | Freelance &nbsp; 2023 – Present</div>
+          <ul>
+            <li>Recorded studio-quality saxophone performances for tracks by local artists across multiple genres</li>
+            <li>Prepared thoroughly for recording sessions by reviewing arrangements, practicing parts, and adapting to artistic direction</li>
+            <li>Collaborated with producers, engineers, and fellow musicians to deliver cohesive, high-quality recordings</li>
+            <li>Maintained consistent performance standards while working efficiently within scheduled studio sessions</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Barista / Shift Lead</h3>
+          <div class="meta">Bongo Java East &nbsp; 2025 – 2026</div>
+          <ul>
+            <li>Served as shift lead for evening operations, overseeing staff workflow across beverage preparation, food service, and routine shop maintenance</li>
+            <li>Collaborated with management to suggest and implement ideas that improved service efficiency and menu item quality</li>
+            <li>Delivered consistent, high-quality coffee and beverage service in a fast-paced environment</li>
+            <li>Provided strong customer service and hospitality, contributing to a welcoming atmosphere for Nashville's workforce and regular community patrons</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <footer></footer>
+
+</body>
+</html>
