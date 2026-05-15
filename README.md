@@ -9,7 +9,6 @@ A single-page HTML/CSS resume built without any frameworks or dependencies. It m
 ## Tech
 
 - Plain HTML5 and CSS3
-- No external dependencies or build tools
 - Print-friendly layout
 
 ## Viewing
