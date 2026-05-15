@@ -12,7 +12,7 @@ A single-page HTML/CSS resume built without any frameworks or dependencies. It m
 
 ## Viewing
 
-Open `index.html` directly in any browser — no server required.
+Open [`index.html`](https://jackgardner99.github.io/Resume/) directly in any browser — no server required.
 
 ## Contact
 
